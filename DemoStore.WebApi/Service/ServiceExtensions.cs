@@ -8,7 +8,8 @@ namespace DemoStore.WebApi
         public static IServiceCollection AddProjectServices(this IServiceCollection services)
         {
             services.AddScoped<ICategoryService, CategoryService>();
-
+            services.AddScoped<IEmployeeService, EmployeeService>();
+            services.AddScoped<IProductService, ProductService>();
             return services;
         }
     }
