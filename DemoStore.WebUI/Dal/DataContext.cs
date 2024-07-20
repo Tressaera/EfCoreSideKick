@@ -7,6 +7,7 @@ namespace DemoStore.WebUI
     public partial class DataContext : DbContext
     {
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Employee> Employees { get; set; }
         public DbSet<Product> Products { get; set; }
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
